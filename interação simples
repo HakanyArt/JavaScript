@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DoM</title>
+</head>
+<style>
+div#area {
+    background:red;
+    color: rgb(3, 0, 0);
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+</style>
+<body>
+   
+    <div id= 'area' onclick="clicar()" onmouseenter="Entrar()" onmouseout="Sair()">
+     interaja... 
+
+     </div>
+
+    <script>
+    var a = window.document.getElementById('area')
+
+function clicar (){
+
+a.innerText = 'Clicked!'
+a.style.background= 'blue'
+}
+function Entrar () {
+    a.innerText=   'Entrou!'
+    a.style.background= 'Red'
+}
+function Sair () {
+    a.innerText= 'Saiu!'
+    a.style.background= 'green'
+}
+        
+    </script>
+
+</body>
+</html>
